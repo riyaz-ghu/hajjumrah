@@ -1,0 +1,21 @@
+{
+  "projects": {
+    "default": "gohajjumrah-main"
+  },
+  "targets": {
+    "gohajjumrah-main": {
+      "hosting": {
+        "main": [
+          "gohajjumrah-main"
+        ],
+        "packages": [
+          "gohajjumrah-packages"
+        ],
+        "operators": [
+          "gohajjumrah-operators"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
