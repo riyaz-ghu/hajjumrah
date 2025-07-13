@@ -59,6 +59,9 @@ export default function UmrahPackageDetails() {
   console.log(packageId);
   const roomTypeParam = searchParams.get("roomType") || "quad";
 
+  // Type for room types
+  type RoomType = "single" | "double" | "triple" | "quad";
+
   // State management
   const [packageData, setPackageData] = useState<PackageData | null>(null);
   const [loading, setLoading] = useState(true);
@@ -75,7 +78,9 @@ export default function UmrahPackageDetails() {
   const [selectedHotel, setSelectedHotel] = useState<
     "makkah" | "madinah" | null
   >(null);
-  const [selectedRoom, setSelectedRoom] = useState(roomTypeParam);
+  const [selectedRoom, setSelectedRoom] = useState<RoomType>(
+    roomTypeParam as RoomType
+  );
   const [selectedDate, setSelectedDate] = useState("2024-02-15");
   const [reviewTab, setReviewTab] = useState("operator");
   const [photoFilter, setPhotoFilter] = useState("all");
@@ -167,7 +172,7 @@ export default function UmrahPackageDetails() {
   // Update selected room when URL param changes
   useEffect(() => {
     console.log(roomTypeParam);
-    setSelectedRoom(roomTypeParam);
+    setSelectedRoom(roomTypeParam as RoomType);
   }, [roomTypeParam]);
 
   // Scroll position tracking with better sensitivity
@@ -230,8 +235,8 @@ export default function UmrahPackageDetails() {
     refs[section as keyof typeof refs]?.current?.scrollIntoView({
       behavior: "smooth",
       block: "start",
-      offset: 100,
     });
+    window.scrollBy({ top: -100, behavior: "smooth" });
   };
 
   const handleProceedToDetails = () => {
@@ -279,7 +284,7 @@ export default function UmrahPackageDetails() {
           duration: packageData.duration,
           price: packageData.pricing.availableDates[0]?.prices.quad || 50000, // Use first available price
           rating: packageData.rating,
-          reviews: packageData.reviews,
+          reviews: packageData.reviewsNo,
           makkahHotel: {
             name: packageData.hotels.makkah.name,
             rating: packageData.hotels.makkah.rating,
@@ -815,20 +820,10 @@ export default function UmrahPackageDetails() {
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
               <span className="font-semibold">
-                {
-                  packageData.reviews[
-                    reviewTab as keyof typeof packageData.reviews
-                  ].rating
-                }
+                {(packageData as any).reviews?.[reviewTab]?.rating || 0}
               </span>
               <span className="text-gray-600">
-                (
-                {
-                  packageData.reviews[
-                    reviewTab as keyof typeof packageData.reviews
-                  ].count
-                }
-                )
+                ({(packageData as any).reviews?.[reviewTab]?.count || 0})
               </span>
             </div>
           </div>
@@ -859,38 +854,50 @@ export default function UmrahPackageDetails() {
 
           <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
             <div className="space-y-4">
-              {packageData.reviews[
-                reviewTab as keyof typeof packageData.reviews
-              ].reviews.map((review, index) => (
-                <div
-                  key={index}
-                  className="border-b border-gray-100 pb-4 last:border-b-0"
-                >
-                  <div className="flex items-start justify-between mb-2">
-                    <div>
-                      <h4 className="font-medium">{review.name}</h4>
-                      <div className="flex items-center gap-1">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <Star
-                            key={star}
-                            className={`w-4 h-4 ${
-                              star <= review.rating
-                                ? "fill-yellow-400 text-yellow-400"
-                                : "text-gray-300"
-                            }`}
-                          />
-                        ))}
+              {(packageData as any).reviews?.[reviewTab]?.reviews?.map(
+                (
+                  review: {
+                    name: string;
+                    rating: number;
+                    comment: string;
+                    date: string;
+                  },
+                  index: number
+                ) => (
+                  <div
+                    key={index}
+                    className="border-b border-gray-100 pb-4 last:border-b-0"
+                  >
+                    <div className="flex items-start justify-between mb-2">
+                      <div>
+                        <h4 className="font-medium">{review.name}</h4>
+                        <div className="flex items-center gap-1">
+                          {[1, 2, 3, 4, 5].map((star) => (
+                            <Star
+                              key={star}
+                              className={`w-4 h-4 ${
+                                star <= review.rating
+                                  ? "fill-yellow-400 text-yellow-400"
+                                  : "text-gray-300"
+                              }`}
+                            />
+                          ))}
+                        </div>
                       </div>
+                      <span className="text-sm text-gray-500">
+                        {review.date}
+                      </span>
                     </div>
-                    <span className="text-sm text-gray-500">
-                      {review.formattedDate}
-                    </span>
+                    <p className="text-sm text-gray-600 line-clamp-3">
+                      {review.comment}
+                    </p>
                   </div>
-                  <p className="text-sm text-gray-600 line-clamp-3">
-                    {review.review}
-                  </p>
-                </div>
-              ))}
+                )
+              ) || (
+                <p className="text-gray-500 text-center py-4">
+                  No reviews available
+                </p>
+              )}
             </div>
           </div>
         </div>
@@ -1046,7 +1053,10 @@ export default function UmrahPackageDetails() {
               {/* Room Type Selection */}
               <div className="mb-6">
                 <h4 className="font-medium mb-3">Room Type</h4>
-                <Select value={selectedRoom} onValueChange={setSelectedRoom}>
+                <Select
+                  value={selectedRoom}
+                  onValueChange={(value) => setSelectedRoom(value as RoomType)}
+                >
                   <SelectTrigger className="w-full">
                     <SelectValue placeholder="Select room type" />
                   </SelectTrigger>
@@ -1195,7 +1205,7 @@ export default function UmrahPackageDetails() {
           selectedRoom={selectedRoom}
           selectedDate={selectedDate}
           onSuccess={handleBookingSuccess}
-          onClose={() => setShowBookingForm(false)}
+          onBack={() => setShowBookingForm(false)}
         />
       )}
 
@@ -1203,7 +1213,7 @@ export default function UmrahPackageDetails() {
       {showBookingSuccess && (
         <BookingSuccess
           bookingId={bookingId}
-          onClose={() => setShowBookingSuccess(false)}
+          onBack={() => setShowBookingSuccess(false)}
         />
       )}
     </div>

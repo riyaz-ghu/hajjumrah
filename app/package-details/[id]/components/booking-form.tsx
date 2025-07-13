@@ -64,8 +64,7 @@ export function BookingForm({
     }
 
     if (!formData.hasPassport) {
-      newErrors.hasPassport =
-        "Please confirm all travelers have valid passports";
+      newErrors.hasPassport = false;
     }
 
     setErrors(newErrors);
