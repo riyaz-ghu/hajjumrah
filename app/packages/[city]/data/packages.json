@@ -1,0 +1,300 @@
+{
+  "packages": [
+    {
+      "id": "1",
+      "provider": "Al Haramain Tours",
+      "logo": "AH",
+      "logoColor": "bg-green-600",
+      "duration": "14 days",
+      "price": 89999,
+      "originalPrice": 99999,
+      "discount": 10,
+      "rating": 4.5,
+      "reviews": 234,
+      "makkahHotel": {
+        "name": "Swissotel Al Maqam",
+        "rating": 5,
+        "distanceFromHaram": "200m from Haram",
+        "distanceInMeters": 200
+      },
+      "madinahHotel": {
+        "name": "Pullman Zamzam Madinah",
+        "rating": 4,
+        "distanceFromHaram": "300m from Masjid Nabawi",
+        "distanceInMeters": 300
+      },
+      "departureDate": "Fri, 25 Oct",
+      "returnDate": "Thu, 07 Nov",
+      "departureCity": "Mumbai",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals", "Guide", "Insurance"],
+      "roomType": "Quad",
+      "availability": "Available",
+      "deals": 5,
+      "flightDetails": {
+        "airline": "Air India Express",
+        "stops": 1,
+        "duration": "8h 45m"
+      },
+      "packageType": "premium"
+    },
+    {
+      "id": "2",
+      "provider": "Makkah Express",
+      "logo": "ME",
+      "logoColor": "bg-blue-600",
+      "duration": "10 days",
+      "price": 75999,
+      "originalPrice": 85999,
+      "discount": 12,
+      "rating": 4.2,
+      "reviews": 156,
+      "makkahHotel": {
+        "name": "Hilton Suites Makkah",
+        "rating": 4,
+        "distanceFromHaram": "300m from Haram",
+        "distanceInMeters": 300
+      },
+      "madinahHotel": {
+        "name": "Madinah Hilton",
+        "rating": 4,
+        "distanceFromHaram": "500m from Masjid Nabawi",
+        "distanceInMeters": 500
+      },
+      "departureDate": "Mon, 28 Oct",
+      "returnDate": "Wed, 06 Nov",
+      "departureCity": "Delhi",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals"],
+      "roomType": "Triple",
+      "availability": "Few seats left",
+      "deals": 8,
+      "flightDetails": {
+        "airline": "IndiGo",
+        "stops": 1,
+        "duration": "7h 30m"
+      },
+      "packageType": "standard"
+    },
+    {
+      "id": "3",
+      "provider": "Sacred Journey",
+      "logo": "SJ",
+      "logoColor": "bg-green-700",
+      "duration": "12 days",
+      "price": 125999,
+      "originalPrice": 139999,
+      "discount": 10,
+      "rating": 4.8,
+      "reviews": 89,
+      "makkahHotel": {
+        "name": "Conrad Makkah",
+        "rating": 5,
+        "distanceFromHaram": "50m from Haram",
+        "distanceInMeters": 50
+      },
+      "madinahHotel": {
+        "name": "Anwar Al Madinah Movenpick",
+        "rating": 5,
+        "distanceFromHaram": "100m from Masjid Nabawi",
+        "distanceInMeters": 100
+      },
+      "departureDate": "Sat, 02 Nov",
+      "returnDate": "Wed, 13 Nov",
+      "departureCity": "Bangalore",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals", "Guide", "Insurance", "Ziyarat"],
+      "roomType": "Double",
+      "availability": "Limited",
+      "deals": 3,
+      "flightDetails": {
+        "airline": "Emirates",
+        "stops": 1,
+        "duration": "9h 15m"
+      },
+      "packageType": "luxury"
+    },
+    {
+      "id": "4",
+      "provider": "Budget Umrah",
+      "logo": "BU",
+      "logoColor": "bg-orange-600",
+      "duration": "7 days",
+      "price": 45999,
+      "originalPrice": 52999,
+      "discount": 13,
+      "rating": 3.8,
+      "reviews": 67,
+      "makkahHotel": {
+        "name": "Al Kiswah Towers",
+        "rating": 3,
+        "distanceFromHaram": "800m from Haram",
+        "distanceInMeters": 800
+      },
+      "madinahHotel": {
+        "name": "Taiba Madinah Hotel",
+        "rating": 3,
+        "distanceFromHaram": "1km from Masjid Nabawi",
+        "distanceInMeters": 1000
+      },
+      "departureDate": "Sun, 03 Nov",
+      "returnDate": "Sat, 09 Nov",
+      "departureCity": "Chennai",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport"],
+      "roomType": "Quad",
+      "availability": "Available",
+      "deals": 12,
+      "flightDetails": {
+        "airline": "SpiceJet",
+        "stops": 2,
+        "duration": "12h 30m"
+      },
+      "packageType": "economy"
+    },
+    {
+      "id": "5",
+      "provider": "Premium Hajj & Umrah",
+      "logo": "PH",
+      "logoColor": "bg-purple-600",
+      "duration": "21 days",
+      "price": 185999,
+      "originalPrice": 199999,
+      "discount": 7,
+      "rating": 4.9,
+      "reviews": 45,
+      "makkahHotel": {
+        "name": "Raffles Makkah Palace",
+        "rating": 5,
+        "distanceFromHaram": "30m from Haram",
+        "distanceInMeters": 30
+      },
+      "madinahHotel": {
+        "name": "Oberoi Madinah",
+        "rating": 5,
+        "distanceFromHaram": "50m from Masjid Nabawi",
+        "distanceInMeters": 50
+      },
+      "departureDate": "Fri, 15 Nov",
+      "returnDate": "Thu, 05 Dec",
+      "departureCity": "Kolkata",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals", "Guide", "Insurance", "Ziyarat", "VIP Service"],
+      "roomType": "Double",
+      "availability": "Very Limited",
+      "deals": 2,
+      "flightDetails": {
+        "airline": "Qatar Airways",
+        "stops": 1,
+        "duration": "8h 20m"
+      },
+      "packageType": "luxury"
+    },
+    {
+      "id": "6",
+      "provider": "Economy Tours",
+      "logo": "ET",
+      "logoColor": "bg-blue-600",
+      "duration": "8 days",
+      "price": 38999,
+      "originalPrice": 42999,
+      "discount": 9,
+      "rating": 3.5,
+      "reviews": 123,
+      "makkahHotel": {
+        "name": "Makkah Towers",
+        "rating": 3,
+        "distanceFromHaram": "1.2km from Haram",
+        "distanceInMeters": 1200
+      },
+      "madinahHotel": {
+        "name": "Al Eman Madinah",
+        "rating": 3,
+        "distanceFromHaram": "1.5km from Masjid Nabawi",
+        "distanceInMeters": 1500
+      },
+      "departureDate": "Wed, 20 Nov",
+      "returnDate": "Wed, 27 Nov",
+      "departureCity": "Hyderabad",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport"],
+      "roomType": "Quad",
+      "availability": "Available",
+      "deals": 15,
+      "flightDetails": {
+        "airline": "Air Arabia",
+        "stops": 1,
+        "duration": "10h 45m"
+      },
+      "packageType": "economy"
+    },
+    {
+      "id": "7",
+      "provider": "Zam Zam Tours",
+      "logo": "ZZ",
+      "logoColor": "bg-teal-600",
+      "duration": "15 days",
+      "price": 95999,
+      "originalPrice": 105999,
+      "discount": 9,
+      "rating": 4.3,
+      "reviews": 178,
+      "makkahHotel": {
+        "name": "Fairmont Makkah Clock Royal Tower",
+        "rating": 5,
+        "distanceFromHaram": "0m from Haram",
+        "distanceInMeters": 0
+      },
+      "madinahHotel": {
+        "name": "Shaza Al Madinah",
+        "rating": 4,
+        "distanceFromHaram": "200m from Masjid Nabawi",
+        "distanceInMeters": 200
+      },
+      "departureDate": "Tue, 12 Nov",
+      "returnDate": "Tue, 26 Nov",
+      "departureCity": "Pune",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals", "Guide", "Insurance"],
+      "roomType": "Triple",
+      "availability": "Available",
+      "deals": 7,
+      "flightDetails": {
+        "airline": "Saudia",
+        "stops": 0,
+        "duration": "6h 15m"
+      },
+      "packageType": "premium"
+    },
+    {
+      "id": "8",
+      "provider": "Madinah Express",
+      "logo": "MX",
+      "logoColor": "bg-indigo-600",
+      "duration": "9 days",
+      "price": 68999,
+      "originalPrice": 76999,
+      "discount": 10,
+      "rating": 4.1,
+      "reviews": 92,
+      "makkahHotel": {
+        "name": "Makkah Millennium Hotel",
+        "rating": 4,
+        "distanceFromHaram": "400m from Haram",
+        "distanceInMeters": 400
+      },
+      "madinahHotel": {
+        "name": "Crowne Plaza Madinah",
+        "rating": 4,
+        "distanceFromHaram": "350m from Masjid Nabawi",
+        "distanceInMeters": 350
+      },
+      "departureDate": "Thu, 07 Nov",
+      "returnDate": "Fri, 15 Nov",
+      "departureCity": "Ahmedabad",
+      "inclusions": ["Visa", "Flight", "Hotel", "Transport", "Meals"],
+      "roomType": "Quad",
+      "availability": "Available",
+      "deals": 9,
+      "flightDetails": {
+        "airline": "Fly Dubai",
+        "stops": 1,
+        "duration": "9h 30m"
+      },
+      "packageType": "standard"
+    }
+  ]
+}

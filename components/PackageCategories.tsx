@@ -1,6 +1,6 @@
 "use client";
 
-import WhatsAppButton from "./WhatsAppButton";
+import WhatsAppButton from "../app/components/WhatsAppButton";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Hotel, Bus, Utensils } from "lucide-react";
 import { motion } from "framer-motion";

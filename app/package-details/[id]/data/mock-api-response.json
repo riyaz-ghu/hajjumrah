@@ -1,0 +1,335 @@
+{
+  "success": true,
+  "data": {
+    "id": "atlas-umrah-package",
+    "name": "Atlas Umrah Package",
+    "operator": "Al Haramain Tours",
+    "description": "Premium Umrah Package - 14 Days",
+    "duration": "14 days",
+    "rating": 4.8,
+    "reviews": 245,
+    "departure": "Mumbai",
+    "flightName": "Air India Express",
+    "images": {
+      "makkah": [
+        "/placeholder.svg?height=400&width=600&text=Makkah+Hotel+Exterior",
+        "/placeholder.svg?height=400&width=600&text=Makkah+Hotel+Room",
+        "/placeholder.svg?height=400&width=600&text=Makkah+Restaurant",
+        "/placeholder.svg?height=400&width=600&text=Makkah+Lobby"
+      ],
+      "madinah": [
+        "/placeholder.svg?height=400&width=600&text=Madinah+Hotel+Exterior",
+        "/placeholder.svg?height=400&width=600&text=Madinah+Hotel+Room",
+        "/placeholder.svg?height=400&width=600&text=Madinah+Restaurant",
+        "/placeholder.svg?height=400&width=600&text=Madinah+View"
+      ]
+    },
+    "highlights": [
+      {
+        "icon": "trophy",
+        "title": "Exceptional service & staff",
+        "description": "The top-rated staff and service will ensure you feel welcome and pampered throughout your journey."
+      },
+      {
+        "icon": "utensils",
+        "title": "All meals included",
+        "description": "Start your day with a delicious buffet breakfast and enjoy lunch & dinner - a rare find in premium packages."
+      },
+      {
+        "icon": "navigation",
+        "title": "Discover nearby landmarks",
+        "description": "Walk to Great Mosque of Makkah and Masjid Nabawi with guided Ziyarat tours included."
+      }
+    ],
+    "hotels": {
+      "makkah": {
+        "name": "Swissotel Al Maqam",
+        "rating": 4.2,
+        "address": "Ibrahim Al Khalil Road, Near Haram Gate 1, Makkah 21955",
+        "distance": "200m from Haram Sharif",
+        "nights": 7,
+        "amenities": ["AC", "WiFi", "Room Service", "Buffet"],
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.1273945898447!2d39.82663!3d21.42251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b74c5d1b91%3A0x3e5d8b4c5f8a9c7d!2sSwissotel%20Al%20Maqam%20Makkah!5e0!3m2!1sen!2s!4v1635789012345&zoom=17"
+      },
+      "madinah": {
+        "name": "Pullman Zamzam",
+        "rating": 3.9,
+        "address": "King Faisal Road, Near Gate 25, Madinah 42311",
+        "distance": "150m from Masjid Nabawi",
+        "nights": 5,
+        "amenities": ["AC", "WiFi", "Buffet", "Laundry"],
+        "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1813.9272445898447!2d39.61663!3d24.46851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204b74c5d1b91%3A0x3e5d8b4c5f8a9c7d!2sPullman%20Zamzam%20Madinah!5e0!3m2!1sen!2s!4v1635789012345&zoom=17"
+      }
+    },
+    "itinerary": [
+      {
+        "day": 1,
+        "description": "Departure from Mumbai in evening, arrival in Jeddah, transfer to Makkah hotel"
+      },
+      {
+        "day": 2,
+        "description": "Check-in to Swissotel Al Maqam, rest and preparation, orientation session"
+      },
+      {
+        "day": 3,
+        "description": "Perform Umrah with group guidance, Tawaf and Sa'i with experienced guide"
+      },
+      {
+        "days": "4-5",
+        "description": "Free time for prayers, shopping at Abraj Al Bait, visit to Jabal-e-Noor and Jabal-e-Thawr"
+      },
+      {
+        "day": 6,
+        "description": "Travel to Madinah by luxury bus, check-in to Pullman Zamzam hotel"
+      },
+      {
+        "days": "7-8",
+        "description": "Visit Masjid Nabawi, prayers in Rawdah Sharif, Ziyarat of historical places"
+      },
+      {
+        "days": "9-10",
+        "description": "Visit Quba Mosque, Uhud Mountain, and other significant Islamic sites"
+      },
+      {
+        "days": "11-12",
+        "description": "Additional time for prayers, shopping, and spiritual reflection"
+      },
+      {
+        "day": 13,
+        "description": "Return to Makkah, final Tawaf, last-minute shopping"
+      },
+      {
+        "day": 14,
+        "description": "Departure to Jeddah airport, return flight to Mumbai"
+      }
+    ],
+    "inclusions": [
+      {
+        "icon": "plane",
+        "text": "Return flights Mumbai-Jeddah"
+      },
+      {
+        "icon": "car",
+        "text": "Airport transfers"
+      },
+      {
+        "icon": "car",
+        "text": "Makkah-Madinah transportation"
+      },
+      {
+        "icon": "hotel",
+        "text": "5-star hotels in Makkah & Madinah"
+      },
+      {
+        "icon": "utensils",
+        "text": "Daily breakfast, lunch & dinner"
+      },
+      {
+        "icon": "waves",
+        "text": "Zamzam water supply"
+      },
+      {
+        "icon": "checkCircle",
+        "text": "Laundry service"
+      },
+      {
+        "icon": "shield",
+        "text": "Visa processing assistance"
+      },
+      {
+        "icon": "headphones",
+        "text": "24/7 customer support"
+      },
+      {
+        "icon": "userCheck",
+        "text": "Group leader assistance"
+      },
+      {
+        "icon": "shield",
+        "text": "Travel insurance"
+      },
+      {
+        "icon": "mapIcon",
+        "text": "Ziyarat tours with guide"
+      }
+    ],
+    "pricing": {
+      "availableDates": [
+        {
+          "date": "2024-02-15",
+          "prices": {
+            "single": 119999,
+            "double": 89999,
+            "triple": 79999,
+            "quad": 69999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-02-22",
+          "prices": {
+            "single": 124999,
+            "double": 94999,
+            "triple": 84999,
+            "quad": 74999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-03-01",
+          "prices": {
+            "single": 129999,
+            "double": 99999,
+            "triple": 89999,
+            "quad": 79999
+          },
+          "available": false
+        },
+        {
+          "date": "2024-03-08",
+          "prices": {
+            "single": 119999,
+            "double": 89999,
+            "triple": 79999,
+            "quad": 69999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-03-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-04-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-05-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-06-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-07-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        },
+        {
+          "date": "2024-08-15",
+          "prices": {
+            "single": 122999,
+            "double": 92999,
+            "triple": 82999,
+            "quad": 72999
+          },
+          "available": true
+        }
+      ],
+      "roomTypes": [
+        {
+          "id": "single",
+          "label": "Single Occupancy"
+        },
+        {
+          "id": "double",
+          "label": "Double Sharing"
+        },
+        {
+          "id": "triple",
+          "label": "Triple Sharing"
+        },
+        {
+          "id": "quad",
+          "label": "Quad Sharing"
+        }
+      ]
+    },
+    "reviews": {
+      "operator": {
+        "rating": 4.8,
+        "count": 245,
+        "reviews": [
+          {
+            "name": "Ahmed Khan",
+            "rating": 5,
+            "comment": "Excellent service from Al Haramain Tours. Very professional and organized throughout the journey.",
+            "date": "2 weeks ago"
+          },
+          {
+            "name": "Fatima Sheikh",
+            "rating": 4,
+            "comment": "Good overall experience with the tour operator. Group leader was very helpful.",
+            "date": "1 month ago"
+          }
+        ]
+      },
+      "makkah": {
+        "rating": 4.2,
+        "count": 156,
+        "reviews": [
+          {
+            "name": "Mohammad Ali",
+            "rating": 5,
+            "comment": "Swissotel Al Maqam is excellent! Very close to Haram and great service.",
+            "date": "2 months ago"
+          },
+          {
+            "name": "Aisha Rahman",
+            "rating": 4,
+            "comment": "Great hotel with comfortable rooms. The proximity to Haram is unbeatable.",
+            "date": "3 months ago"
+          }
+        ]
+      },
+      "madinah": {
+        "rating": 3.9,
+        "count": 189,
+        "reviews": [
+          {
+            "name": "Omar Hassan",
+            "rating": 5,
+            "comment": "Pullman Zamzam is perfect for Madinah stay. Walking distance to Masjid Nabawi.",
+            "date": "1 month ago"
+          },
+          {
+            "name": "Khadija Ahmed",
+            "rating": 4,
+            "comment": "Very good hotel with excellent buffet. Staff was courteous and helpful.",
+            "date": "2 months ago"
+          }
+        ]
+      }
+    }
+  }
+}

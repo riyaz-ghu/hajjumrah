@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Bell } from "lucide-react";
 import { motion } from "framer-motion";
-import WhatsAppButton from "./WhatsAppButton";
+import WhatsAppButton from "../app/components/WhatsAppButton";
 
 export default function Hajj2025() {
   return (

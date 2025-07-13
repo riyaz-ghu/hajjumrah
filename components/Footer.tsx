@@ -1,6 +1,6 @@
 "use client";
 
-import WhatsAppButton from "./WhatsAppButton";
+import WhatsAppButton from "../app/components/WhatsAppButton";
 
 export default function Footer() {
   return (
@@ -33,6 +33,7 @@ export default function Footer() {
             <WhatsAppButton 
               className="w-full mb-4"
               message="Hi, I need support regarding Hajj & Umrah packages"
+              type="support"
             >
               WhatsApp Support
             </WhatsAppButton>

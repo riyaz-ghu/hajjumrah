@@ -1,6 +1,6 @@
 "use client";
 
-import WhatsAppButton from "./WhatsAppButton";
+import WhatsAppButton from "../app/components/WhatsAppButton";
 import { Users, Shield, Building } from "lucide-react";
 import { motion } from "framer-motion";
 

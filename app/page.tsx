@@ -7,17 +7,10 @@ import PackageCategories from '@/components/PackageCategories';
 import Hajj2025 from '@/components/Hajj2025';
 import QuickLinks from '@/components/QuickLinks';
 import Footer from '@/components/Footer';
+import LandingPage from './Landing/page';
 
 export default function Home() {
   return (
-    <>
-      <main className="min-h-screen bg-background">
-        <Hero />
-        <PackageCategories />
-        <AboutGohajjumrah />
-        <QuickLinks />
-        <Footer />
-      </main>
-    </>
+    <LandingPage />
   );
 }
